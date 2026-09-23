@@ -1,0 +1,23 @@
+# Все параметры эксперимента живут здесь, а не в коде.
+seed: 42
+
+data:
+  path: data/raw/dataset.csv   # если файла нет, генерируются синтетические данные
+  target: target
+  time_column: event_time      # null -> случайное разбиение (для табличных задач с временем так делать нельзя)
+  test_size: 0.2
+  numeric_features: null       # null -> определяются автоматически
+  categorical_features: null
+
+model:
+  name: logreg                 # logreg | random_forest | hist_gb
+  params:
+    max_iter: 1000
+
+output:
+  model_path: models/model.joblib
+  metrics_path: reports/metrics.json
+
+tracking:
+  mlflow: false
+  experiment_name: mlproject
