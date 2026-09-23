@@ -1,7 +1,6 @@
 # Название проекта
 
-<!-- Бейджи: замените USER/REPO на свои -->
-![CI](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/KiraPankov/ml-project-template/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 
 > Одно предложение: какую бизнес-проблему решает проект и с каким результатом.
@@ -46,7 +45,7 @@
 ## Запуск
 
 ```bash
-git clone https://github.com/USER/REPO.git && cd REPO
+git clone https://github.com/KiraPankov/ml-project-template.git && cd ml-project-template
 make install        # зависимости + pre-commit
 make train          # обучение, модель в models/, метрики в reports/
 make test           # тесты
